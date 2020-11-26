@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>first.html</title>
+		{% load static %}
+		<link rel = "stylesheet" type = "text/css" href = "{% static 'css/style.css' %">
+		<script src = "{% static 'js/MyJS.js' %}"></script>
+		<style type="text/css">
+			div
+			{
+				background-image: url("image.jfif");
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+  				background-size: 100% 100%;
+			}
+			a:link, a:visited
+			{
+				background-color: hotpink;
+				color: black;
+				padding: 14px 25px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				border: 3px solid black;
+			}
+			a: hover, a: active
+			{
+				background-color: black;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body align = "center">
+		<div>
+			<img src = "{% static 'images/image.jfif' %}">
+			<h2>RIDE UNLIMITED, FOR A FIXED PRICE</h2>
+			<h3>Rent from India's Largest Fleet of Motorcycles, Trusted by millions.</h3>
+		</div><br>
+		<a href="booking.html">Book a Bike</a>
+	</body>
+</html>

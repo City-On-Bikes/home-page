@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Booking Portal</title>
+	<style type="text/css">
+		body
+		{
+			background-color: lightblue;
+		}
+		h1
+		{
+			color: black;
+			text-align: center;
+			font-size: 50px;
+			font-family: "Times New Roman", Times, serif;
+		}
+		#cone {color: red; font-family: "Lucida Console", Courier, monospace;}
+		.square
+		{
+			margin: auto;
+			background: #000;
+    		width: 70%;
+    		border: 3px solid yellow;
+    		padding: 10px;
+    		text-align: center;
+		}
+		.square h2
+		{
+			color: #fff
+		}
+		a:link, a:visited
+		{
+			background-color: black;
+			color: white;
+			padding: 14px 25px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			border: 3px solid yellow;
+		}
+		a: hover, a: active
+		{
+			background-color: black;
+			text-align: center;
+		}
+	</style>
+</head>
+<body align = "center">
+	<h1>COB</h1>
+	<h2 id = "cone", align = "center">City On Bikes</h2><br>
+	<div class = "container">
+		<div class = "square">
+			<fieldset>
+				<form name = "bookingform" action = "" method = "">
+
+				<h2 align = "center">Booking form</h2>	
+				
+				<label for name style = "color: white">Name</label>
+	            <input type = "text" name = "name" size = "20"><br><br>
+
+	            <label for name style = "color: white">Picking Up Date</label>
+	            <input type = "date" name = "pdate" size = "20"><br><br>
+
+	            <label for name style = "color: white">Picking Up Time</label>
+	            <input type = "time" name = "ptime" size = "20"><br><br>
+
+	            <label for name style = "color: white">Dropping Off Date</label>
+	            <input type = "date" name = "ddate" size = "20"><br><br>
+
+	            <label for name style = "color: white">Dropping Off Time</label>
+	            <input type = "time" name = "dtime" size = "20"><br><br>
+				
+				<input type = "submit" name = "Find Bike">
+				<input type = "reset" name = "Cancel"><br><br>
+			</fieldset>
+		</div>
+	</div><br><br>
+	<a href="default.asp" target="_blank">Find Bikes</a>
+</body>
+</html>
